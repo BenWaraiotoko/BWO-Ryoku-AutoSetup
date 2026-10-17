@@ -1,0 +1,62 @@
+# VS Code extensions — BWO-Ryoku-AutoSetup
+# Mirrors the Mac setup (BWO-MacAutoSetup Brewfile, Oct 2026 V2)
+# Installed by install.sh via `code --install-extension`
+# Note: tailscale.vscode-tailscale kept — user uses WireGuard at home
+# but Tailscale VS Code extension is harmless if unused
+
+adpyke.vscode-sql-formatter
+anthropic.claude-code
+bierner.markdown-mermaid
+budparr.language-hugo-vscode
+catppuccin.catppuccin-vsc
+daltonmenezes.aura-theme
+figma.figma-vscode-extension
+github.remotehub
+github.vscode-github-actions
+github.vscode-pull-request-github
+google.colab
+google.gemini-cli-vscode-ide-companion
+google.geminicodeassist
+kilocode.kilo-code
+lvgl.lvgl-project-creator-vscode
+mechatroner.rainbow-csv
+meta.pyrefly
+ms-azuretools.vscode-azureresourcegroups
+ms-azuretools.vscode-containers
+ms-azuretools.vscode-docker
+ms-dotnettools.vscode-dotnet-runtime
+ms-mssql.data-workspace-vscode
+ms-mssql.mssql
+ms-mssql.sql-bindings-vscode
+ms-mssql.sql-database-projects-vscode
+ms-toolsai.jupyter
+ms-toolsai.jupyter-hub
+ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
+ms-toolsai.vscode-jupyter-cell-tags
+ms-toolsai.vscode-jupyter-slideshow
+ms-vscode-remote.remote-containers
+ms-vscode-remote.remote-ssh
+ms-vscode-remote.remote-ssh-edit
+ms-vscode-remote.remote-wsl
+ms-vscode-remote.vscode-remote-extensionpack
+ms-vscode.cmake-tools
+ms-vscode.cpp-devtools
+ms-vscode.cpptools
+ms-vscode.cpptools-extension-pack
+ms-vscode.cpptools-themes
+ms-vscode.makefile-tools
+ms-vscode.powershell
+ms-vscode.remote-explorer
+ms-vscode.remote-repositories
+ms-vscode.remote-server
+ms-vscode.test-adapter-converter
+mtxr.sqltools
+novadust.novadust
+petli-full.json-to-yaml-and-more
+pkief.material-icon-theme
+platformio.platformio-ide
+qufiwefefwoyn.kanagawa
+tailscale.vscode-tailscale
+tamasfe.even-better-toml
+tushortz.python-extended-snippets

@@ -1,0 +1,16 @@
+# npm global packages — BWO-Ryoku-AutoSetup
+# Mirrors the Mac setup. Claude Code is installed FIRST (the alias
+# `claude` comes from the npm package), then MCP servers.
+# install.sh installs these; this file is the reference manifest.
+
+@anthropic-ai/claude-code  # Claude Code (alias: claude)
+@21st-dev/magic
+@executeautomation/playwright-mcp-server
+@google/gemini-cli
+@modelcontextprotocol/server-brave-search
+@modelcontextprotocol/server-filesystem
+@modelcontextprotocol/server-github
+@playwright/mcp
+@suekou/mcp-notion-server
+filefive
+ts-node

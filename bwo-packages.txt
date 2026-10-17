@@ -1,0 +1,100 @@
+# BWO Extra Packages for Ryoku
+# -------------------------------------------------------------
+# These are ADDITIONAL packages on top of what Ryoku installs
+# by default (the "90 packages" manifest: fish, zsh, starship,
+# bat, eza, fd, fzf, ripgrep, zoxide, fastfetch, jq, yq? no,
+# git, github-cli, lazygit, neovim, btop, yazi, kitty, mpv,
+# nautilus, chromium, firefox, zen-browser, spotify-launcher,
+# flatpak, go, nodejs, npm, python, python-pip, python-pipx,
+# mise, rust, yay, ffmpeg, imagemagick, yt-dlp, cava, fuzzel,
+# grim/slurp, wl-clipboard, cliphist, playerctl, voxtype,
+# localsend, gamemode, gamescope, mangohud, qemu stack...)
+#
+# Delta computed from BWO-MacAutoSetup (Oct 2026 V2) minus
+# everything Ryoku already ships. macOS-only tools are NOT
+# ported (mas, coreutils/gnu-sed — Linux has GNU coreutils
+# natively, xcodegen, raycast, rectangle, taphouse, mole...).
+#
+# Format: one package name per line (pacman/AUR package names)
+# Comments start with #
+
+# -------------------------------------------------------------
+# CLI Tools & Utilities
+# -------------------------------------------------------------
+tmux               # Terminal multiplexer (Ryoku ships none — kitty + tmux)
+htop               # Classic process viewer (btop is there, htop complements)
+lazysql            # Terminal SQL client TUI (AUR)
+go-yq              # YAML processor, like jq for YAML (binary: yq)
+git-delta          # Fancy git diff viewer (binary: delta)
+csvlens            # Interactive CSV viewer in terminal (AUR)
+glow               # Markdown renderer for terminal
+chafa              # Render images in terminal
+tree               # Directory tree viewer
+wget               # Downloader
+rsync              # File sync
+pandoc             # Markup format converter
+shellcheck         # Lint tool for shell scripts
+stow               # Symlink farm manager (dotfiles)
+
+# -------------------------------------------------------------
+# Dev & Infra (from the Mac setup — Ryoku ships none of these)
+# -------------------------------------------------------------
+docker             # Containers
+lazydocker         # Docker TUI (AUR)
+aws-cli-v2         # AWS CLI
+kubectl            # Kubernetes CLI
+ansible            # Configuration automation / IaC
+hugo               # Static site generator
+nmap               # Port scanner
+
+# -------------------------------------------------------------
+# Languages & Package Managers
+# (Ryoku ships: go, nodejs, npm, python, pip, pipx, mise, rust)
+# -------------------------------------------------------------
+uv                 # Fast Python package installer (AUR)
+poetry             # Python dependency management
+# nvm not needed — Ryoku ships mise, a strictly better runtime manager
+
+# -------------------------------------------------------------
+# AI Tools
+# -------------------------------------------------------------
+ollama             # Run local LLMs
+opencode           # AI coding agent for the terminal (AUR)
+rtk                # CLI proxy to minimize LLM token consumption (AUR)
+# claude-code: install via npm (see install.sh) or AUR
+
+# -------------------------------------------------------------
+# Media Encoders (ffmpeg is preinstalled; these add codecs)
+# -------------------------------------------------------------
+x264
+x265
+xvidcore
+
+# -------------------------------------------------------------
+# GUI Applications
+# (Ryoku ships: kitty, chromium, firefox, zen-browser, nautilus,
+#  mpv, spotify-launcher, ryotunes, ryoshot, voxtype, localsend)
+# -------------------------------------------------------------
+obsidian           # Notes (NOT in Ryoku base — via LiveSync fetch)
+zed                # Fast, collaborative code editor (AUR)
+visual-studio-code # VS Code (AUR: visual-studio-code)
+sublime-text-4     # Sublime Text (AUR)
+vlc                # Media player (mpv is there; VLC for compat)
+discord            # Chat platform
+notion-app-enhanced # Notion desktop (AUR)
+drawio             # Diagrams (pacman community: drawio)
+1password          # Password manager (AUR)
+1password-cli      # op CLI (AUR: 1password-cli)
+proton-vpn-gtk-app # Proton VPN client
+protonmail-bridge  # Proton Mail bridge for local mail
+arduino-ide        # Arduino IDE (community)
+balena-etcher      # Flash OS images to USB (AUR)
+# postman: use flatpak (com.getpostman.Postman) — no clean AUR pkg
+# termius / royal-tsx: Mac-only; SSH via kitty + ssh config
+
+# -------------------------------------------------------------
+# Fonts (Ryoku ships inter, space-grotesk, noto + cjk, nerd
+# fonts, maple-mono, material-symbols)
+# -------------------------------------------------------------
+ttf-fira-code      # Used by Zed config
+ttf-jetbrains-mono # JetBrains Mono
